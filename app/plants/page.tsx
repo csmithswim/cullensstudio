@@ -12,6 +12,7 @@ const plantNames = [
   "Snake Plant",
   "Snake Plant",
   "Pencil Cactus",
+  "Spiderwort",
 ];
 
 export const metadata: Metadata = {
