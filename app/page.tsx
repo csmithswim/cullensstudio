@@ -50,10 +50,8 @@ export default function Home() {
       <section className="hero" id="home" aria-labelledby="hero-title">
         <div className="hero-monogram" aria-hidden="true">C</div>
         <div className="hero-copy">
-          <p className="eyebrow hero-eyebrow"><span /> INDEPENDENT CREATIVE PRACTICE</p>
           <h1 id="hero-title">What’s Cooking, Good Looking?</h1>
           <div className="hero-bottom">
-            <p>Thoughtful identities and digital experiences<br className="desktop-break" /> for people building a more considered world.</p>
             <a href="#work" className="circle-link" aria-label="Explore selected work">
               <span aria-hidden="true">↓</span>
             </a>
