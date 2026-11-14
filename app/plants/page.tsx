@@ -25,11 +25,27 @@ export default function PlantsPage() {
       </header>
 
       <section className="plants-section plants-page-section" aria-labelledby="plants-title">
-        <div className="plant-matrix" role="img" aria-label="Empty matrix with 20 rows and 6 columns">
-          {Array.from({ length: 120 }, (_, index) => (
-            <span className="plant-matrix-cell" key={index} />
-          ))}
-        </div>
+        <table className="plant-matrix" aria-label="Plant matrix with 20 rows and 6 columns">
+          <thead>
+            <tr>
+              <th scope="col">Plant Name</th>
+              <th scope="col">Soil Mix</th>
+              <th scope="col">Light Level</th>
+              <th scope="col" aria-label="Column 4" />
+              <th scope="col" aria-label="Column 5" />
+              <th scope="col" aria-label="Column 6" />
+            </tr>
+          </thead>
+          <tbody>
+            {Array.from({ length: 20 }, (_, row) => (
+              <tr key={row}>
+                {Array.from({ length: 6 }, (_, column) => (
+                  <td aria-label={`Row ${row + 1}, column ${column + 1}`} key={column} />
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
         <div className="plants-feature">
           <div className="plants-photo plants-garden-photo">
             <Image
