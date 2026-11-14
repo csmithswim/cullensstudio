@@ -30,14 +30,14 @@ a { color: inherit; text-decoration: none; }
 .eyebrow { display: flex; align-items: center; gap: 10px; margin: 0; font: 10px var(--mono); letter-spacing: 0; }
 .eyebrow > span { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--orange); }
 .hero h1 { margin: 27px 0 32px; font-size: clamp(54px, 7.3vw, 104px); line-height: .96; font-weight: 500; letter-spacing: 0; }
-.hero h1 em, .studio-copy h2 em { font-family: var(--serif); font-weight: 500; }
+.hero h1 em { font-family: var(--serif); font-weight: 500; }
 .hero-bottom { display: flex; align-items: flex-end; justify-content: flex-end; max-width: 535px; }
 .circle-link { display: grid; width: 48px; height: 48px; place-items: center; border: 1px solid rgba(255,255,255,.68); border-radius: 50%; font-size: 20px; transition: background .2s ease, color .2s ease; }
 .circle-link:hover { background: #fff; color: var(--ink); }
 .hero-index { position: absolute; right: 6.1%; bottom: 25px; margin: 0; font: 9px var(--mono); letter-spacing: 0; color: rgba(255,255,255,.78); }
 .work-section { padding: 105px 10.1% 112px; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 42px; }
-.section-heading .eyebrow, .studio-label .eyebrow { color: var(--muted); }
+.section-heading .eyebrow { color: var(--muted); }
 .section-heading h2 { margin: 17px 0 0; font-size: 43px; line-height: 1; font-weight: 500; letter-spacing: 0; }
 .accent-dot { color: var(--orange); }
 .section-note { margin: 0 0 2px; color: var(--muted); font-size: 12px; line-height: 1.7; }
@@ -64,17 +64,7 @@ a { color: inherit; text-decoration: none; }
 .project-caption { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding-top: 14px; }
 .project-caption h3 { margin: 0; font-size: 14px; font-weight: 600; }
 .project-caption p { margin: 0; color: var(--muted); font-size: 10px; text-align: right; }
-.studio-section { display: grid; grid-template-columns: 1fr 2fr; gap: 7%; padding: 92px 10.1% 98px; background: #e9eee7; }
-.studio-label { display: flex; flex-direction: column; justify-content: space-between; }
-.studio-aside { margin: 46px 0 0; color: var(--green); font: 11px/1.6 var(--mono); }
-.studio-aside span { display: inline-block; margin-top: 18px; color: var(--orange); font-size: 27px; }
-.studio-copy h2 { margin: -7px 0 35px; font-size: clamp(38px, 5vw, 64px); font-weight: 500; line-height: 1.04; letter-spacing: 0; }
-.studio-details { display: grid; grid-template-columns: 1.05fr .95fr; gap: 22px 10%; align-items: start; }
-.studio-details > p { max-width: 380px; margin: 0; color: #58625c; font-size: 14px; line-height: 1.8; }
-.services { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; color: var(--green); font-size: 11px; }
-.services span::before { content: '↗'; margin-right: 7px; color: var(--orange); }
-.text-link { grid-column: 1 / -1; justify-self: start; margin-top: 6px; padding-bottom: 6px; border-bottom: 1px solid var(--green); font-size: 12px; }
-.text-link span { margin-left: 18px; color: var(--orange); }
+.kitchen-section { min-height: 320px; background: #e9eee7; }
 .about-intro { position: relative; overflow: hidden; padding: 78px 10.1% 70px; background: var(--green); color: var(--paper); }
 .about-intro::after { position: absolute; top: -88px; right: 7%; color: transparent; content: 'C'; font: 500 390px/.85 var(--serif); -webkit-text-stroke: 1px rgba(255,255,255,.13); pointer-events: none; }
 .about-intro > * { position: relative; z-index: 1; }
@@ -114,9 +104,7 @@ a { color: inherit; text-decoration: none; }
   .project:nth-child(3) { grid-column: 1 / 2; }
   .project-caption { display: block; }
   .project-caption p { margin-top: 6px; text-align: left; }
-  .studio-section { grid-template-columns: 1fr; gap: 36px; padding: 72px 7% 78px; }
-  .studio-aside { display: none; }
-  .studio-copy h2 { margin-top: 0; }
+  .kitchen-section { min-height: 220px; }
   .chef-profile { gap: 6%; padding: 58px 7%; }
   .chef-credentials > div { grid-template-columns: 120px 1fr; }
 }
@@ -141,8 +129,6 @@ a { color: inherit; text-decoration: none; }
   .project-art { aspect-ratio: .78; }
   .project-caption h3 { font-size: 12px; }
   .project-caption p { font-size: 9px; }
-  .studio-details { grid-template-columns: 1fr; gap: 22px; }
-  .text-link { grid-column: auto; }
   .about-intro { padding: 63px 7% 55px; }
   .about-intro::after { top: 2px; right: -14%; font-size: 280px; }
   .about-intro h1 { font-size: clamp(48px, 13vw, 68px); }

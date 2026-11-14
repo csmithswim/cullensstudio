@@ -124,22 +124,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="studio-section" id="about" aria-labelledby="studio-title">
-        <div className="studio-label">
-          <p className="eyebrow"><span /> SMALL STUDIO, OPEN MIND</p>
-          <p className="studio-aside">GOOD IDEAS<br />GROW HERE <span>✳</span></p>
-        </div>
-        <div className="studio-copy">
-          <h2 id="studio-title">A little curiosity<br />goes a <em>long way.</em></h2>
-          <div className="studio-details">
-            <p>Cullen’s Studio is an independent creative practice partnering with thoughtful people to make brands and digital spaces feel unmistakably their own.</p>
-            <div className="services">
-              <span>Brand identity</span><span>Digital design</span><span>Art direction</span><span>Good company</span>
-            </div>
-            <a className="text-link" href="mailto:hello@cullens.studio">A little about your project <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-      </section>
+      <section className="kitchen-section" id="about" aria-label="Kitchen" />
+        <section className="kitchen-section" id="about" aria-label="Kitchen" />
 
     </main>
   );
