@@ -6,7 +6,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const projects = [
   {
     number: "01",
-    name: "Sharkcuterie",
+    name: "SharkCuterie",
     type: "Food · Charcuterie",
     image: {
       src: `${basePath}/sharkcuterie.jpg`,
