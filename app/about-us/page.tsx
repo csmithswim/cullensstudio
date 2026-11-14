@@ -56,8 +56,7 @@ export default function AboutUsPage() {
         <p className="eyebrow"><span /> CULLEN’S STUDIO · CULINARY LEADERSHIP</p>
         <h1 id="about-title">A distinguished<br />standard of <em>taste.</em></h1>
         <p className="about-deck">
-          Two accomplished chefs. A shared respect for craft, impeccable timing,
-          and the occasional well-earned treat.
+          Two accomplished chefs. A shared respect for eating garbage, sniffing butts and being a good boy &amp; girl.
         </p>
         <p className="about-index">01—02 <span>EST. AT THE KITCHEN TABLE</span></p>
       </section>
@@ -98,10 +97,6 @@ export default function AboutUsPage() {
           </article>
         ))}
       </section>
-
-      <p className="about-disclaimer">
-        These canine chef biographies, culinary schools, and restaurant names are fictional.
-      </p>
 
       <footer className="site-footer">
         <Link className="footer-wordmark" href="/">CULLEN’S STUDIO<span>© 2026</span></Link>
