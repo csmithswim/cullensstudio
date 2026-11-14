@@ -6,11 +6,11 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const projects = [
   {
     number: "01",
-    name: "SharkCuterie",
-    type: "Food · Charcuterie",
+    name: "Lamb Burger",
+    type: "Food · Burger",
     image: {
-      src: `${basePath}/sharkcuterie.jpg`,
-      alt: "A charcuterie board arranged on rocks beside the sea",
+      src: `${basePath}/lamb-burger.jpg`,
+      alt: "A lamb burger served on a plate beside a bouquet of bright flowers",
       aspectRatio: "4 / 3",
     },
     art: null,
