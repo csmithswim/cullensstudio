@@ -11,6 +11,7 @@ const projects = [
     image: {
       src: `${basePath}/sharkcuterie.jpg`,
       alt: "A charcuterie board arranged on rocks beside the sea",
+      aspectRatio: "4 / 3",
     },
     art: null,
     mark: null,
@@ -20,19 +21,27 @@ const projects = [
     number: "02",
     name: "Field Notes No. 8",
     type: "Art direction · Editorial",
-    art: "project-art-field",
-    mark: "08",
-    artTitle: "Field notes",
-    image: null,
+    image: {
+      src: `${basePath}/fourth-of-july.jpg`,
+      alt: "A Fourth of July cookout plate with sausages, a cheeseburger and grilled food",
+      aspectRatio: "4 / 3",
+    },
+    art: null,
+    mark: null,
+    artTitle: null,
   },
   {
     number: "03",
     name: "Sunday Objects",
     type: "Strategy · E-commerce",
-    art: "project-art-sunday",
-    mark: "S",
-    artTitle: "Objects for everyday",
-    image: null,
+    image: {
+      src: `${basePath}/blt.jpg`,
+      alt: "A BLT sandwich on a wooden board beside a bouquet of bright flowers",
+      aspectRatio: "2809 / 3268",
+    },
+    art: null,
+    mark: null,
+    artTitle: null,
   },
 ];
 
@@ -93,7 +102,7 @@ export default function Home() {
           {projects.map((project) => (
             <article className="project" key={project.number}>
               {project.image ? (
-                <div className="project-photo">
+                <div className="project-photo" style={{ aspectRatio: project.image.aspectRatio }}>
                   <Image
                     src={project.image.src}
                     alt={project.image.alt}

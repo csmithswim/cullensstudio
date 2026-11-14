@@ -50,8 +50,8 @@ a { color: inherit; text-decoration: none; }
 .project-grid { display: grid; grid-template-columns: 1.23fr 1fr 1fr; gap: 20px; align-items: start; }
 .project:nth-child(2) { margin-top: 48px; }
 .project:nth-child(3) { margin-top: 95px; }
-.project-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #dce5d8; }
-.project-photo img { object-fit: cover; object-position: center; }
+.project-photo { position: relative; overflow: hidden; background: #dce5d8; }
+.project-photo img { object-fit: contain; object-position: center; }
 .project-art { position: relative; display: grid; min-width: 0; aspect-ratio: .92; place-items: center; overflow: hidden; }
 .project-art-goodland { background: #dce5d8; color: #315746; }
 .project-art-goodland::before { position: absolute; inset: 7%; border: 1px solid rgba(49,87,70,.36); content: ''; transform: rotate(-6deg); }
