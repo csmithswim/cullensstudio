@@ -121,8 +121,6 @@ export default function Home() {
 
       <footer className="site-footer">
         <a className="footer-wordmark" href="#home">CULLEN’S STUDIO<span>© 2026</span></a>
-        <p>Independent by nature. Available worldwide.</p>
-        <a href="mailto:hello@cullens.studio">HELLO@CULLENS.STUDIO <span aria-hidden="true">↗</span></a>
       </footer>
     </main>
   );

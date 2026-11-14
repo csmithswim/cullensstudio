@@ -100,8 +100,6 @@ export default function AboutUsPage() {
 
       <footer className="site-footer">
         <Link className="footer-wordmark" href="/">CULLEN’S STUDIO<span>© 2026</span></Link>
-        <p>Independent by nature. Available worldwide.</p>
-        <a href="mailto:hello@cullens.studio">HELLO@CULLENS.STUDIO <span aria-hidden="true">↗</span></a>
       </footer>
     </main>
   );
