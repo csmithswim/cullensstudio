@@ -24,7 +24,8 @@ export default function PlantsPage() {
         </nav>
       </header>
 
-      <section className="plants-section plants-page-section" aria-labelledby="plants-title">
+      <section className="plants-section plants-page-section" aria-label="Garden plant information">
+        <p className="plants-page-intro">A little greenery makes the studio feel more like home.</p>
         <table className="plant-matrix" aria-label="Plant matrix with 20 rows and 6 columns">
           <thead>
             <tr>
@@ -46,20 +47,13 @@ export default function PlantsPage() {
             ))}
           </tbody>
         </table>
-        <div className="plants-feature">
-          <div className="plants-photo plants-garden-photo">
-            <Image
-              src={`${basePath}/garden.jpg`}
-              alt="Colorful flowers and garden produce beside a window"
-              fill
-              sizes="(max-width: 520px) 86vw, (max-width: 800px) 40vw, 35vw"
-            />
-          </div>
-          <div className="plants-copy">
-            <p className="eyebrow"><span /> A LITTLE GREEN</p>
-            <h1 id="plants-title">Plants<span className="accent-dot">.</span></h1>
-            <p>A little greenery makes the studio feel more like home.</p>
-          </div>
+        <div className="plants-photo plants-garden-photo">
+          <Image
+            src={`${basePath}/garden.jpg`}
+            alt="Colorful flowers and garden produce beside a window"
+            fill
+            sizes="(max-width: 520px) 86vw, (max-width: 800px) 40vw, 35vw"
+          />
         </div>
       </section>
     </main>
