@@ -60,6 +60,15 @@ export default function Home() {
       </header>
 
       <section className="hero" id="home" aria-labelledby="hero-title">
+        <div className="hero-photo">
+          <Image
+            src={`${basePath}/home-studio.jpg`}
+            alt="A home music studio with a keyboard, records, plants, and a sleeping cat"
+            fill
+            loading="eager"
+            sizes="100vw"
+          />
+        </div>
         <div className="hero-monogram" aria-hidden="true">C</div>
         <div className="hero-copy">
           <h1 id="hero-title">What’s Cooking, Good Looking?</h1>
@@ -125,7 +134,6 @@ export default function Home() {
       </section>
 
       <section className="kitchen-section" id="about" aria-label="Kitchen" />
-        <section className="kitchen-section" id="about" aria-label="Kitchen" />
 
     </main>
   );
