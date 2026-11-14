@@ -6,11 +6,15 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const projects = [
   {
     number: "01",
-    name: "Goodland House",
-    type: "Identity · Hospitality",
-    art: "project-art-goodland",
-    mark: "G",
-    artTitle: "A quieter kind of stay",
+    name: "Sharkcuterie",
+    type: "Food · Charcuterie",
+    image: {
+      src: `${basePath}/sharkcuterie.jpg`,
+      alt: "A charcuterie board arranged on rocks beside the sea",
+    },
+    art: null,
+    mark: null,
+    artTitle: null,
   },
   {
     number: "02",
@@ -19,6 +23,7 @@ const projects = [
     art: "project-art-field",
     mark: "08",
     artTitle: "Field notes",
+    image: null,
   },
   {
     number: "03",
@@ -27,6 +32,7 @@ const projects = [
     art: "project-art-sunday",
     mark: "S",
     artTitle: "Objects for everyday",
+    image: null,
   },
 ];
 
@@ -64,7 +70,7 @@ export default function Home() {
         <div className="section-heading">
           <div>
             <p className="eyebrow"><span /> A FEW RECENT FAVORITES</p>
-            <h2 id="work-title">Selected work<span className="accent-dot">.</span></h2>
+            <h2 id="work-title">Selected Work<span className="accent-dot">.</span></h2>
           </div>
           <p className="section-note">Good work starts with good people.<br />Here are a few we’ve met along the way.</p>
         </div>
@@ -86,11 +92,23 @@ export default function Home() {
         <div className="project-grid">
           {projects.map((project) => (
             <article className="project" key={project.number}>
-              <div className={`project-art ${project.art}`} aria-hidden="true">
-                <span className="project-number">{project.number}</span>
-                <span className="project-art-mark">{project.mark}</span>
-                <span className="project-art-title">{project.artTitle}</span>
-              </div>
+              {project.image ? (
+                <div className="project-photo">
+                  <Image
+                    src={project.image.src}
+                    alt={project.image.alt}
+                    fill
+                    sizes="(max-width: 800px) 46vw, 29vw"
+                  />
+                  <span className="project-number">{project.number}</span>
+                </div>
+              ) : (
+                <div className={`project-art ${project.art}`} aria-hidden="true">
+                  <span className="project-number">{project.number}</span>
+                  <span className="project-art-mark">{project.mark}</span>
+                  <span className="project-art-title">{project.artTitle}</span>
+                </div>
+              )}
               <div className="project-caption">
                 <h3>{project.name}</h3>
                 <p>{project.type}</p>
