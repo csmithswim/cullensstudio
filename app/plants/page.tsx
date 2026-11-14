@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+const plantNames = [
+  "Spider Plant",
+  "Spider Plant",
+  "Clivia",
+  "Monstera",
+  "Snake Plant",
+  "Snake Plant",
+  "Snake Plant",
+  "Snake Plant",
+  "Snake Plant",
+  "Pencil Cactus",
+];
+
 export const metadata: Metadata = {
   title: "Plants — Cullen's Studio",
   description: "Plant care notes from Cullen's Studio.",
@@ -36,9 +49,17 @@ export default function PlantsPage() {
           <tbody>
             {Array.from({ length: 20 }, (_, row) => (
               <tr key={row}>
-                {Array.from({ length: 6 }, (_, column) => (
-                  <td aria-label={`Row ${row + 1}, column ${column + 1}`} key={column} />
-                ))}
+                {Array.from({ length: 6 }, (_, column) => {
+                  const value = column === 0 ? plantNames[row] ?? "" : "";
+                  return (
+                    <td
+                      aria-label={value || `Row ${row + 1}, column ${column + 1}`}
+                      key={column}
+                    >
+                      {value}
+                    </td>
+                  );
+                })}
               </tr>
             ))}
           </tbody>
