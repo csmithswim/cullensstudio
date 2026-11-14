@@ -74,7 +74,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <p className="hero-index">INDEPENDENT BY NATURE · AVAILABLE WORLDWIDE</p>
       </section>
 
       <section className="work-section" id="work" aria-labelledby="work-title">
@@ -83,7 +82,6 @@ export default function Home() {
             <p className="eyebrow"><span /> A FEW RECENT FAVORITES</p>
             <h2 id="work-title">Selected Work<span className="accent-dot">.</span></h2>
           </div>
-          <p className="section-note">Good work starts with good people.<br />Here are a few we’ve met along the way.</p>
         </div>
         <article className="featured-project" aria-labelledby="featured-project-title">
           <div className="featured-photo">

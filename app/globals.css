@@ -34,13 +34,11 @@ a { color: inherit; text-decoration: none; }
 .hero-bottom { display: flex; align-items: flex-end; justify-content: flex-end; max-width: 535px; }
 .circle-link { display: grid; width: 48px; height: 48px; place-items: center; border: 1px solid rgba(255,255,255,.68); border-radius: 50%; font-size: 20px; transition: background .2s ease, color .2s ease; }
 .circle-link:hover { background: #fff; color: var(--ink); }
-.hero-index { position: absolute; z-index: 2; right: 6.1%; bottom: 25px; margin: 0; font: 9px var(--mono); letter-spacing: 0; color: rgba(255,255,255,.78); }
 .work-section { padding: 105px 10.1% 112px; }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 42px; }
 .section-heading .eyebrow { color: var(--muted); }
 .section-heading h2 { margin: 17px 0 0; font-size: 43px; line-height: 1; font-weight: 500; letter-spacing: 0; }
 .accent-dot { color: var(--orange); }
-.section-note { margin: 0 0 2px; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .featured-project { display: grid; grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); margin-bottom: 52px; background: #e9eee7; }
 .featured-photo { position: relative; min-width: 0; aspect-ratio: .86; overflow: hidden; background: #dce5d8; }
 .featured-photo img { object-fit: cover; object-position: center; }
@@ -97,7 +95,6 @@ a { color: inherit; text-decoration: none; }
   .main-nav { gap: 22px; font-size: 12px; }
   .hero { min-height: 610px; min-height: min(680px, calc(100svh - 68px)); }
   .hero-copy { left: 7%; width: 86%; }
-  .hero-index { right: 7%; font-size: 8px; }
   .work-section { padding: 76px 7% 84px; }
   .project-grid { grid-template-columns: 1fr 1fr; column-gap: 16px; row-gap: 30px; }
   .project:nth-child(3) { grid-column: 1 / 2; }
@@ -114,7 +111,6 @@ a { color: inherit; text-decoration: none; }
   .hero-copy { top: 47%; }
   .hero h1 { font-size: clamp(52px, 15vw, 74px); }
   .circle-link { width: 42px; height: 42px; flex: 0 0 auto; margin-left: 12px; }
-  .hero-index { max-width: 80%; font-size: 7px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 17px; }
   .section-heading h2 { font-size: 37px; }
   .featured-project { grid-template-columns: 1fr; margin-bottom: 36px; }
