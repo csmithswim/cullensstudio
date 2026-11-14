@@ -46,9 +46,6 @@ export default function AboutUsPage() {
           <Link href="/#work">Work</Link>
           <Link href="/#about">Kitchen</Link>
           <Link href="/about-us" aria-current="page">About Us</Link>
-          <a className="nav-contact" href="mailto:hello@cullens.studio">
-            Let’s talk <span aria-hidden="true">↗</span>
-          </a>
         </nav>
       </header>
 

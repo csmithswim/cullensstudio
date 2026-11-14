@@ -53,9 +53,6 @@ export default function Home() {
           <a href="#work">Work</a>
           <a href="#about">Kitchen</a>
           <Link href="/about-us">About Us</Link>
-          <a className="nav-contact" href="mailto:hello@cullens.studio">
-            Let’s talk <span aria-hidden="true">↗</span>
-          </a>
         </nav>
       </header>
 
@@ -69,7 +66,6 @@ export default function Home() {
             sizes="100vw"
           />
         </div>
-        <div className="hero-monogram" aria-hidden="true">C</div>
         <div className="hero-copy">
           <h1 id="hero-title">What’s Cooking, Good Looking?</h1>
           <div className="hero-bottom">
