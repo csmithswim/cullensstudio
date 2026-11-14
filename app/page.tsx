@@ -141,9 +141,6 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="site-footer">
-        <a className="footer-wordmark" href="#home">CULLEN’S STUDIO<span>© 2026</span></a>
-      </footer>
     </main>
   );
 }

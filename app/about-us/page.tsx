@@ -98,9 +98,6 @@ export default function AboutUsPage() {
         ))}
       </section>
 
-      <footer className="site-footer">
-        <Link className="footer-wordmark" href="/">CULLEN’S STUDIO<span>© 2026</span></Link>
-      </footer>
     </main>
   );
 }
