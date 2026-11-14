@@ -25,18 +25,25 @@ export default function PlantsPage() {
       </header>
 
       <section className="plants-section plants-page-section" aria-labelledby="plants-title">
-        <div className="plants-photo">
-          <Image
-            src={`${basePath}/home-studio.jpg`}
-            alt="Green plants bringing life to the home studio"
-            fill
-            sizes="(max-width: 640px) 86vw, 40vw"
-          />
+        <div className="plant-matrix" role="img" aria-label="Empty matrix with 20 rows and 6 columns">
+          {Array.from({ length: 120 }, (_, index) => (
+            <span className="plant-matrix-cell" key={index} />
+          ))}
         </div>
-        <div className="plants-copy">
-          <p className="eyebrow"><span /> A LITTLE GREEN</p>
-          <h1 id="plants-title">Plants<span className="accent-dot">.</span></h1>
-          <p>A little greenery makes the studio feel more like home.</p>
+        <div className="plants-feature">
+          <div className="plants-photo plants-garden-photo">
+            <Image
+              src={`${basePath}/garden.jpg`}
+              alt="Colorful flowers and garden produce beside a window"
+              fill
+              sizes="(max-width: 520px) 86vw, (max-width: 800px) 40vw, 35vw"
+            />
+          </div>
+          <div className="plants-copy">
+            <p className="eyebrow"><span /> A LITTLE GREEN</p>
+            <h1 id="plants-title">Plants<span className="accent-dot">.</span></h1>
+            <p>A little greenery makes the studio feel more like home.</p>
+          </div>
         </div>
       </section>
     </main>
