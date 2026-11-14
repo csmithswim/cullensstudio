@@ -63,6 +63,13 @@ a { color: inherit; text-decoration: none; }
 .project-caption h3 { margin: 0; font-size: 14px; font-weight: 600; }
 .project-caption p { margin: 0; color: var(--muted); font-size: 10px; text-align: right; }
 .kitchen-section { min-height: 320px; background: #e9eee7; }
+.plants-section { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); align-items: center; gap: 8%; padding: 96px 10.1%; background: var(--green); color: var(--paper); }
+.plants-photo { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: #dce5d8; }
+.plants-photo img { object-fit: cover; object-position: center; }
+.plants-copy .eyebrow { color: rgba(247,247,242,.68); }
+.plants-copy h1, .plants-copy h2 { margin: 24px 0 16px; font-size: clamp(48px, 6vw, 76px); font-weight: 500; line-height: 1; }
+.plants-copy > p:last-child { max-width: 340px; margin: 0; color: rgba(247,247,242,.78); font-size: 14px; line-height: 1.8; }
+.plants-page-section { min-height: calc(100svh - 76px); }
 .about-intro { position: relative; overflow: hidden; padding: 78px 10.1% 70px; background: var(--green); color: var(--paper); }
 .about-intro::after { position: absolute; top: -88px; right: 7%; color: transparent; content: 'C'; font: 500 390px/.85 var(--serif); -webkit-text-stroke: 1px rgba(255,255,255,.13); pointer-events: none; }
 .about-intro > * { position: relative; z-index: 1; }
@@ -101,6 +108,7 @@ a { color: inherit; text-decoration: none; }
   .project-caption { display: block; }
   .project-caption p { margin-top: 6px; text-align: left; }
   .kitchen-section { min-height: 220px; }
+  .plants-section { gap: 6%; padding: 58px 7%; }
   .chef-profile { gap: 6%; padding: 58px 7%; }
   .chef-credentials > div { grid-template-columns: 120px 1fr; }
 }
@@ -118,6 +126,9 @@ a { color: inherit; text-decoration: none; }
   .featured-info { min-height: 190px; padding: 24px; }
   .featured-info h3 { font-size: 64px; }
   .project-grid { gap: 26px 12px; }
+  .plants-section { grid-template-columns: 1fr; gap: 28px; padding: 46px 7%; }
+  .plants-copy h1, .plants-copy h2 { margin: 18px 0 12px; font-size: 52px; }
+  .plants-page-section { min-height: calc(100svh - 68px); }
   .project-art { aspect-ratio: .78; }
   .project-caption h3 { font-size: 12px; }
   .project-caption p { font-size: 9px; }

@@ -46,6 +46,7 @@ export default function AboutUsPage() {
           <Link href="/#work">Work</Link>
           <Link href="/#about">Kitchen</Link>
           <Link href="/about-us" aria-current="page">About Us</Link>
+          <Link href="/plants">Plants</Link>
         </nav>
       </header>
 

@@ -53,6 +53,7 @@ export default function Home() {
           <a href="#work">Work</a>
           <a href="#about">Kitchen</a>
           <Link href="/about-us">About Us</Link>
+          <Link href="/plants">Plants</Link>
         </nav>
       </header>
 
@@ -128,6 +129,22 @@ export default function Home() {
       </section>
 
       <section className="kitchen-section" id="about" aria-label="Kitchen" />
+
+      <section className="plants-section" id="plants" aria-labelledby="plants-title">
+        <div className="plants-photo">
+          <Image
+            src={`${basePath}/home-studio.jpg`}
+            alt="Green plants bringing life to the home studio"
+            fill
+            sizes="(max-width: 640px) 86vw, 40vw"
+          />
+        </div>
+        <div className="plants-copy">
+          <p className="eyebrow"><span /> A LITTLE GREEN</p>
+          <h2 id="plants-title">Plants<span className="accent-dot">.</span></h2>
+          <p>A little greenery makes the studio feel more like home.</p>
+        </div>
+      </section>
 
     </main>
   );
