@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const metadata: Metadata = {
   title: "Plants — Cullen's Studio",
-  description: "A little greenery makes the studio feel more like home.",
+  description: "Plant care notes from Cullen's Studio.",
 };
 
 export default function PlantsPage() {
@@ -24,8 +21,7 @@ export default function PlantsPage() {
         </nav>
       </header>
 
-      <section className="plants-section plants-page-section" aria-label="Garden plant information">
-        <p className="plants-page-intro">A little greenery makes the studio feel more like home.</p>
+      <section className="plants-section plants-page-section" aria-label="Plant care matrix">
         <table className="plant-matrix" aria-label="Plant matrix with 20 rows and 6 columns">
           <thead>
             <tr>
@@ -47,14 +43,6 @@ export default function PlantsPage() {
             ))}
           </tbody>
         </table>
-        <div className="plants-photo plants-garden-photo">
-          <Image
-            src={`${basePath}/garden.jpg`}
-            alt="Colorful flowers and garden produce beside a window"
-            fill
-            sizes="(max-width: 520px) 86vw, (max-width: 800px) 40vw, 35vw"
-          />
-        </div>
       </section>
     </main>
   );
